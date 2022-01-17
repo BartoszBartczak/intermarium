@@ -1,9 +1,9 @@
-<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #00CC66;">
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #ff0000;">
     <a class="navbar-brand" 
     [routerLink]="['/main']"
     [routerLinkActive]="'active'"
     >
-      <img src="assets/img/logo.jpg" width="50" height="50" alt="Miedzymorze"></a>
+      <img src="assets/img/logo3.png" width="50" height="50" alt="Miedzymorze"></a>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link active"
@@ -36,18 +36,20 @@
         <a class="nav-link">Kontakt</a>
       </li>
     </ul>
-    <a class="sm-brand" target="_blank" href="https://www.youtube.com/channel/UCE9A5DjHjBPYdcPefrClxrw">
-      <img src="assets/img/yt.png" width="40" height="40" alt="Miedzymorze">
-    </a>
-    <a class="sm-brand">
-      <img src="assets/img/fb.png" width="40" height="40" alt="Miedzymorze">
-    </a>
-    <a class="sm-brand">
-      <img src="assets/img/tt.png" width="40" height="40" alt="Miedzymorze">
-    </a>
+    
     <form class="form-inline">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="assets/img/search.png" width="20" height="20" alt="Miedzymorze"></button>
     </form>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="assets/img/dropdown.png" width="40" height="40" alt="Miedzymorze">
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" target="_blank" href="https://www.youtube.com/channel/UCE9A5DjHjBPYdcPefrClxrw"><img src="assets/img/yt.png" width="40" height="40" alt="Miedzymorze"></a>
+        <a class="dropdown-item" target="_blank" href="https://www.facebook.com/intermarism"><img src="assets/img/fb.png" width="40" height="40" alt="Miedzymorze"></a>
+        <a class="dropdown-item" href="#"><img src="assets/img/tt.png" width="40" height="40" alt="Miedzymorze"></a>
+      </div>
+    </div>
   </nav>
 
