@@ -6,11 +6,12 @@ import { MainComponent } from './main/main.component';
 import { ShowComponent } from './show/show.component';
 import { RouterModule } from '@angular/router';
 import { ForumComponent } from './forum/forum.component';
+import { MoviesComponent } from './movies/movies.component';
 
 
 
 @NgModule({
-  declarations: [ArticlesComponent, QuizComponent, MainComponent, ShowComponent, ForumComponent],
+  declarations: [ArticlesComponent, QuizComponent, MainComponent, ShowComponent, ForumComponent, MoviesComponent],
   imports: [
     CommonModule,
     RouterModule

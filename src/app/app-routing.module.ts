@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ArticlesComponent } from './views/articles/articles.component';
 import { ForumComponent } from './views/forum/forum.component';
 import { MainComponent } from './views/main/main.component';
+import { MoviesComponent } from './views/movies/movies.component';
 import { QuizComponent } from './views/quiz/quiz.component';
 import { ShowComponent } from './views/show/show.component';
 
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'quiz', component: QuizComponent },
   { path: 'main', component: MainComponent },
   { path: 'show/:id', component: ShowComponent },
+  { path: 'movies', component: MoviesComponent},
   { path: '', redirectTo: '/main', pathMatch: 'full' }
 ];
 
