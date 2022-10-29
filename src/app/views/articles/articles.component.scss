@@ -12,27 +12,26 @@
 
         .card {
             display: inline-block;
-            width: 80%;
+            width: 100%;
 
             .card-img-top {
                 object-fit: cover;
             }
 
             .card-body {
-                height: auto;
-                width: 80%;
-                word-wrap: break-word;
+                
+                width: 100%;
 
                 .card-tilte {
-                    height: auto;
-                    width: 80%;
+                    
+                    width: 100%;
                 }
 
                 .card-text {
-                    height: auto;
-                    width: 80%;
-                    overflow-wrap: break-word;
+                    
+                    width: 100%;
                     word-break: break-word;
+                    white-space:normal;
                 }
             }
         }
