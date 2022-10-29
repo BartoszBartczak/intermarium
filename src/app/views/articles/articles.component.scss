@@ -2,3 +2,40 @@
     background-color: #00CC66;
     border-color: #00CC66;
 }
+
+@media only screen and(max-width:667px) {
+    .deck {
+        display: block;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+
+        .card {
+            display: inline-block;
+            width: 80%;
+
+            .card-img-top {
+                object-fit: cover;
+            }
+
+            .card-body {
+                height: auto;
+                width: 80%;
+                word-wrap: break-word;
+
+                .card-tilte {
+                    height: auto;
+                    width: 80%;
+                }
+
+                .card-text {
+                    height: auto;
+                    width: 80%;
+                    overflow-wrap: break-word;
+                    word-break: break-word;
+                }
+            }
+        }
+
+    }
+}
