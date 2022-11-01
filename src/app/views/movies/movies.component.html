@@ -1,3 +1,17 @@
 <iframe width="642" height="361" src="https://www.youtube.com/embed/fFUfWXj7St4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="642" height="361" src="https://www.youtube.com/embed/TkGPPP_ZmP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="645" height="361" src="https://www.youtube.com/embed/2zxsE1wVWLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <mat-form-field class="chip-list"> -->
+    <mat-chip-list #chipList>
+      <mat-chip *ngFor="let tag of tags" [selectable]="selectable"
+               [removable]="removable" (remove)="remove(tag)">
+        {{tag.name}}
+        <mat-icon matChipRemove *ngIf="removable">X</mat-icon>
+      </mat-chip>
+      <input class="input" placeholder="New tag..."
+             [matChipInputFor]="chipList"
+             [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+             [matChipInputAddOnBlur]="addOnBlur"
+             (matChipInputTokenEnd)="add($event)" />
+    </mat-chip-list>
+  <!-- </mat-form-field> -->

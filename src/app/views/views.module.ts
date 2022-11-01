@@ -7,6 +7,8 @@ import { ShowComponent } from './show/show.component';
 import { RouterModule } from '@angular/router';
 import { ForumComponent } from './forum/forum.component';
 import { MoviesComponent } from './movies/movies.component';
+import {MatChipInput, MatChipsModule} from '@angular/material/chips';
+import {MatChipInputEvent} from '@angular/material/chips';
 
 
 
@@ -14,7 +16,9 @@ import { MoviesComponent } from './movies/movies.component';
   declarations: [ArticlesComponent, QuizComponent, MainComponent, ShowComponent, ForumComponent, MoviesComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatChipsModule,
+    
   ]
 })
 export class ViewsModule { }
