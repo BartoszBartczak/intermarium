@@ -6,12 +6,17 @@
       <mat-chip *ngFor="let tag of tags" [selectable]="selectable"
                [removable]="removable" (remove)="remove(tag)">
         {{tag.name}}
-        <mat-icon matChipRemove *ngIf="removable">X</mat-icon>
+        
+        <mat-icon matChipRemove *ngIf="removable" (click)="remove(tag)">X</mat-icon>
+        
       </mat-chip>
-      <input class="input" placeholder="New tag..."
+      <br>
+      <div class="input">
+      <input placeholder="New tag..."
              [matChipInputFor]="chipList"
              [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
              [matChipInputAddOnBlur]="addOnBlur"
              (matChipInputTokenEnd)="add($event)" />
+     </div>
     </mat-chip-list>
   <!-- </mat-form-field> -->
