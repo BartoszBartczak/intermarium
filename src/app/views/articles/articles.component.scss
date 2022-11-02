@@ -1,6 +1,16 @@
 .btn-primary {
     background-color: #00CC66;
     border-color: #00CC66;
+    border-radius: 0;
+
+        &::after {
+            content: "→";
+            //background: url(assets/img/Arrow.png);
+            background-color: #00CC66;
+            padding-left: 6px;
+            background-position-x: center;
+
+        }
 }
 
 @media only screen and(max-width:667px) {
