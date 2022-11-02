@@ -8,9 +8,36 @@
             //background: url(assets/img/Arrow.png);
             background-color: #00CC66;
             padding-left: 6px;
-            background-position-x: center;
+            right: 10px;
+            background-position-x: 13px;
 
         }
+}
+
+.btn-primary:hover {
+    color:black;
+
+    &::after {
+        animation: seemore 0.4s;
+    }
+
+    @keyframes seemore {
+
+        0% {
+            padding-left: 6px;
+        }
+
+        50% {
+            padding-left: 19px;
+        }
+
+
+        100% {
+            padding-left: 6px;
+        }
+    }
+
+    
 }
 
 @media only screen and(max-width:667px) {
