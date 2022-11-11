@@ -9,11 +9,12 @@ import { ForumComponent } from './forum/forum.component';
 import { MoviesComponent } from './movies/movies.component';
 import {MatChipInput, MatChipsModule} from '@angular/material/chips';
 import {MatChipInputEvent} from '@angular/material/chips';
+import { SchearchFormComponent } from './schearch-form/schearch-form.component';
 
 
 
 @NgModule({
-  declarations: [ArticlesComponent, QuizComponent, MainComponent, ShowComponent, ForumComponent, MoviesComponent],
+  declarations: [ArticlesComponent, QuizComponent, MainComponent, ShowComponent, ForumComponent, MoviesComponent, SchearchFormComponent],
   imports: [
     CommonModule,
     RouterModule,

@@ -5,6 +5,7 @@ import { ForumComponent } from './views/forum/forum.component';
 import { MainComponent } from './views/main/main.component';
 import { MoviesComponent } from './views/movies/movies.component';
 import { QuizComponent } from './views/quiz/quiz.component';
+import { SchearchFormComponent } from './views/schearch-form/schearch-form.component';
 import { ShowComponent } from './views/show/show.component';
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'main', component: MainComponent },
   { path: 'show/:id', component: ShowComponent },
   { path: 'movies', component: MoviesComponent},
+  { path: 'search-form', component: SchearchFormComponent},
   { path: '', redirectTo: '/main', pathMatch: 'full' }
 ];
 
