@@ -43,17 +43,17 @@
     </ul>
 
     
-    <form class="form-inline">
+    <form #formRef="ngForm" [FormGroup]="searchForm" class="form-inline" >
       <ng-container *ngIf="searchForm.get('query') as field">
         <ng-container *ngIf="field?.dirty">
-          <p *ngIf="field?.hasError('required')" class="text-danger">
+          <p *ngIf="field?.hasError('required')" class="text-bad">
             Field is required
           </p>
-          <p *ngIf="field?.hasError('minlength')" class="text-danger">
+          <p *ngIf="field?.hasError('minlength')" class="text-bad">
             Minimum length is
             {{ searchForm.get("query")?.getError("minlength").requiredLength }}
           </p>
-          <p *ngIf="field?.hasError('censor')" class="text-danger">
+          <p *ngIf="field?.hasError('censor')" class="text-bad">
             Cannot use words
             "{{ field?.getError("censor").badword }}"
           </p>

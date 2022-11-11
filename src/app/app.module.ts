@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { ViewsModule } from './views/views.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatChipsModule} from '@angular/material/chips';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {MatChipsModule} from '@angular/material/chips';
     SharedModule,
     ViewsModule,
     BrowserAnimationsModule,
-    MatChipsModule
+    MatChipsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

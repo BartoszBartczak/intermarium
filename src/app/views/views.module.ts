@@ -10,6 +10,7 @@ import { MoviesComponent } from './movies/movies.component';
 import {MatChipInput, MatChipsModule} from '@angular/material/chips';
 import {MatChipInputEvent} from '@angular/material/chips';
 import { SchearchFormComponent } from './schearch-form/schearch-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -19,6 +20,8 @@ import { SchearchFormComponent } from './schearch-form/schearch-form.component';
     CommonModule,
     RouterModule,
     MatChipsModule,
+    FormsModule,
+    ReactiveFormsModule,
     
   ]
 })
