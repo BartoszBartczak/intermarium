@@ -41,9 +41,25 @@
         <a class="nav-link" (click)="clickEvent()">{{Kontakt?"Kontakt":"Kliknąłeś"}}</a>
       </li>
     </ul>
+
     
     <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <ng-container *ngIf="searchForm.get('query') as field">
+        <ng-container *ngIf="field?.dirty">
+          <p *ngIf="field?.hasError('required')" class="text-danger">
+            Field is required
+          </p>
+          <p *ngIf="field?.hasError('minlength')" class="text-danger">
+            Minimum length is
+            {{ searchForm.get("query")?.getError("minlength").requiredLength }}
+          </p>
+          <p *ngIf="field?.hasError('censor')" class="text-danger">
+            Cannot use words
+            "{{ field?.getError("censor").badword }}"
+          </p>
+        </ng-container>
+      </ng-container>
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" formControlName="query">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="assets/img/search.png" width="20" height="20" alt="Miedzymorze"></button>
     </form>
     <div class="dropdown">
